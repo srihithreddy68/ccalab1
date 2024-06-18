@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            animation: fadeIn 2s;
+        }
+        p {
+            font-size: 1.2em;
+            animation: slideIn 2s;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: scaleIn 2s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Cloud Computing Lab</h1>
+        <p>This static website is hosted by P Srihith Reddy on Google Cloud</p>
+        <button class="button" onclick="alert('Button is Clicked. An action of click was detected')">Click Me</button>
+    </div>
+</body>
+</html>
